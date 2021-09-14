@@ -17,7 +17,7 @@ public class King extends Piece {
 		super(x, y, id, xTile, yTile, team, variant);
 		try {
 			BufferedImage Bigimage = ImageIO
-					.read(new File("C:\\Users\\orest\\Documents\\GitHub\\Chess\\png\\Pieces.png"));
+					.read(new File(System.getProperty("user.dir") + "\\png\\Pieces.png"));
 			if(this.getTeam() == 1) img = Bigimage.getSubimage(0, 0, 80, 80);
 			else img = Bigimage.getSubimage(0, 100, 80, 80);
 		} catch (IOException e) {
