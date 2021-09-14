@@ -16,7 +16,7 @@ private BufferedImage img;
 		super(x, y, id, xTile, yTile, team, variant);
 		try {
 			BufferedImage Bigimage = ImageIO
-					.read(new File("C:\\Users\\orest\\Documents\\GitHub\\Chess\\png\\Pieces.png"));
+					.read(new File(System.getProperty("user.dir") + "\\png\\Pieces.png"));
 			if(this.getTeam() == 1) img = Bigimage.getSubimage(96, 0, 88, 82);
 			else img = Bigimage.getSubimage(96, 100, 88, 82);
 		} catch (IOException e) {
