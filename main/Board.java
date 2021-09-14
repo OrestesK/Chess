@@ -13,7 +13,7 @@ public class Board {
 	private BufferedImage img;
 	public Board() {
 		try{
-		img = ImageIO.read(new File("C:\\Users\\orest\\Documents\\GitHub\\Chess\\png\\Board.png"));
+		img = ImageIO.read(new File(System.getProperty("user.dir") + "\\png\\Board.png"));
 		}
 		catch(IOException e) {
 			
