@@ -148,9 +148,9 @@ public class Game extends Canvas implements Runnable {
 	public void resetGame() {
 		if (winMenu.gameReset == true) {
 			winMenu.gameReset = false;
-			//gameState = STATE.Game;
-			//handler.clear();
-			//startGame();
+			// gameState = STATE.Game;
+			// handler.clear();
+			// startGame();
 			window.reset();
 			new Game();
 		}

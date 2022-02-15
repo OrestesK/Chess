@@ -3,6 +3,7 @@ package main;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
 
 public abstract class Piece {
 	protected float x, y;
@@ -13,6 +14,8 @@ public abstract class Piece {
 	protected int moves = 0;
 	protected int variant;
 	protected boolean selected = false;
+	protected BufferedImage bigImage = Board.bigImg;
+	protected BufferedImage img;
 
 	public Piece(float x, float y, ID id, int xTile, int yTile, int team, int variant) {
 		this.x = x;
@@ -93,7 +96,7 @@ public abstract class Piece {
 	public int getMoves() {
 		return moves;
 	}
-	
+
 	public void setVariant(int value) {
 		variant = value;
 	}
